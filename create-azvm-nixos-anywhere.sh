@@ -103,8 +103,8 @@ if ! az vm show -n "$VM_NAME" -g "$RESOURCE_GROUP_NAME" &> /dev/null; then
     --size $SIZE \
     --security-type Standard
 
-  az vm auto-shutdown -n "$VM_NAME" -g "$RESOURCE_GROUP_NAME" \
-    --time "22:00"
+  # az vm auto-shutdown -n "$VM_NAME" -g "$RESOURCE_GROUP_NAME" \
+  #   --time "22:00"
 fi
 
 # inject Nixos
