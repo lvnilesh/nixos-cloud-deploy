@@ -3,15 +3,15 @@
 set -e
 
 # process command line arguments
-VM_NAME=aws-nixos
-VM_USERNAME=johndoe
+VM_NAME=awsnix
+VM_USERNAME=cloudgenius
 VM_KEYNAME=awsvm
-REGION=eu-central-1
+REGION=us-west-2
 GITHUB_KEYNAME=github
 SIZE="t2.medium"
 MODE=image
 NIX_CHANNEL=nixos-24.05
-NIX_CONFIG_REPO=johndoe/nix-config
+NIX_CONFIG_REPO=lvnilesh/nix-config
 
 VPC_CIDR="10.0.0.0/16"  # VPC CIDR block
 SUBNET_CIDR="10.0.1.0/24"  # Subnet CIDR block

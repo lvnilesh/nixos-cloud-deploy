@@ -3,7 +3,7 @@
 set -e
 
 # process command line arguments
-VMNAME=aws-nixos
+VMNAME=awsnix
 
 while [[ $# -gt 0 ]]; do
     case $1 in

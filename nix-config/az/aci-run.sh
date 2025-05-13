@@ -14,8 +14,8 @@ mkdir -p /root/nix-config
 cp -v /root/work/*nix /root/nix-config/
 
 git config --global init.defaultBranch main
-git config --global user.name "Your Name"
-git config --global user.email "your_email@example.com"
+git config --global user.name "Nilesh"
+git config --global user.email "nilesh@cloudgeni.us"
 
 cd /root/nix-config
 git init
@@ -29,4 +29,4 @@ KEYFILE=/root/.ssh/vmkey
 echo $VMKEY | tr "|" "\n" >$KEYFILE
 chmod 0600 $KEYFILE
 
-nix run github:nix-community/nixos-anywhere -- --flake /root/nix-config#az-nixos --generate-hardware-config nixos-facter /root/nix-config/facter.json -i $KEYFILE root@$FQDN
+nix run github:nix-community/nixos-anywhere -- --flake /root/nix-config#aznix --generate-hardware-config nixos-facter /root/nix-config/facter.json -i $KEYFILE root@$FQDN

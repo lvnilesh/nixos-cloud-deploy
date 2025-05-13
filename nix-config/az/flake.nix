@@ -18,7 +18,7 @@
     {
       formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
-      nixosConfigurations.az-nixos = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.aznix = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           disko.nixosModules.disko

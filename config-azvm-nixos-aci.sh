@@ -3,9 +3,9 @@
 set -e
 
 # process command line arguments
-VM_NAME=az-nixos
-VM_USERNAME=johndoe
-LOCATION=uksouth
+VM_NAME=aznix
+VM_USERNAME=cloudgenius
+LOCATION=westus
 VM_KEYNAME=azvm
 SHARE_NAME=nixos-config
 CONTAINER_NAME=$VM_NAME

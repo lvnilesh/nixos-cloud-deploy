@@ -4,9 +4,9 @@
   pkgs,
   ...
 }: let
-  username = "#PLACEHOLDER_USERNAME";
-  hostname = "#PLACEHOLDER_HOSTNAME";
-  pubkey = "#PLACEHOLDER_PUBKEY";
+  username = "cloudgenius";
+  hostname = "aznix";
+  pubkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEWM/PQ1EF0spec86grdfOaT0/G92oV2KxPHPSe4fTp7";
 in {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
